@@ -4,7 +4,6 @@ import { I18nProvider } from "./i18n/I18nProvider";
 import { HomeApp } from "./app/HomeApp";
 import "./styles/main.css";
 import "./styles/home.css";
-import "./styles/booking-popups.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

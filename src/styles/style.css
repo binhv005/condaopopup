@@ -223,7 +223,7 @@ button { cursor: pointer; border: 0; background: none; }
 .float-contact svg { width: 22px; height: 22px; }
 @keyframes ring { 0%, 100% { box-shadow: 0 0 0 0 rgba(14, 130, 61, .5); } 50% { box-shadow: 0 0 0 12px rgba(14, 130, 61, 0); } }
 
-/* Popup base – dimmed backdrop shared by the booking and nearby-walk popups */
+/* Popup base – dimmed backdrop for the nearby-walk popup */
 .popup {
   position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; padding: 12px;
   background: rgba(8, 24, 19, .66); backdrop-filter: blur(4px);

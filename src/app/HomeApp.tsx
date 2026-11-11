@@ -12,7 +12,6 @@ import { Rooms } from "../components/home/Rooms";
 import { Reviews } from "../components/home/Reviews";
 import { FaqSection } from "../components/home/FaqSection";
 import { Gallery } from "../components/home/Gallery";
-import { BookingPopups } from "../components/home/BookingPopups";
 import { StickyBook } from "../components/home/StickyBook";
 
 export function HomeApp() {
@@ -41,8 +40,6 @@ export function HomeApp() {
       <FloatContact />
       <StickyBook />
       {/* Nearby-walk popup (components/home/NearbyPopup) is switched off for now */}
-      {/* Tour / homestay / transfer booking popups – switch on/off in data/booking-popups.ts (BOOKING_POPUPS.enabled) */}
-      <BookingPopups />
     </>
   );
 }
