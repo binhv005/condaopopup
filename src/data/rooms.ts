@@ -87,4 +87,3 @@ export function roomById(id: string | null): Room | undefined {
 export const ROOM_FILTERS = ["all", "sea", "garden", "family"] as const;
 export type RoomFilter = (typeof ROOM_FILTERS)[number];
 
-export const MIN_PRICE = Math.min(...ROOMS.map((r) => r.price));

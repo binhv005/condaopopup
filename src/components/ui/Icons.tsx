@@ -49,8 +49,6 @@ export const Quote = (p: P) => (
 // Social marks used in the gallery (outline style)
 export const ArrowRight = (p: P) => <Stroke {...p}><path d="M5 12h14M12 5l7 7-7 7" /></Stroke>;
 /** "On air" waves, used as the journey badge */
-export const Waves = (p: P) => <Stroke {...p}><circle cx="12" cy="12" r="2" /><path d="M8.5 15.5a5 5 0 0 1 0-7M15.5 8.5a5 5 0 0 1 0 7M5.6 18.4a9 9 0 0 1 0-12.8M18.4 5.6a9 9 0 0 1 0 12.8" /></Stroke>;
-export const Leaf = (p: P) => <Stroke sw={1.6} {...p}><path d="M5 19C5 10 10 4 20 4c0 10-6 15-15 15z" /><path d="M5 19 14 10" /></Stroke>;
 export const Users = (p: P) => <Stroke sw={1.7} {...p}><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6" /></Stroke>;
 export const House = (p: P) => <Stroke sw={1.7} {...p}><path d="M3 11 12 4l9 7M5 10v10h14V10M10 20v-6h4v6" /></Stroke>;
 /** Pair of laurel branches framing a stat icon */
