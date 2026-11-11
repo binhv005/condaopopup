@@ -1,0 +1,25 @@
+/* Entry stylesheet shared by both pages.
+   Tailwind v4 is loaded WITHOUT preflight: its base reset would restyle the frozen header/footer (see lessons.md).
+   style.css keeps the original reset, header, footer, popup and brand tokens; site.css holds shared content styles. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@import "./style.css";
+@import "./site.css";
+
+/* Expose the brand tokens (defined once in style.css :root) to Tailwind utilities, e.g. bg-tropical, font-display */
+@theme inline {
+  --color-tropical: var(--tropical);
+  --color-tropical-2: var(--tropical-2);
+  --color-sage: var(--sage);
+  --color-ocean: var(--ocean);
+  --color-aqua: var(--aqua);
+  --color-sand: var(--sand);
+  --color-ivory: var(--ivory);
+  --color-sunset: var(--sunset);
+  --color-logo: var(--logo);
+  --color-logo-dark: var(--logo-dark);
+  --font-display: var(--serif);
+  --font-mono: var(--mono);
+}
